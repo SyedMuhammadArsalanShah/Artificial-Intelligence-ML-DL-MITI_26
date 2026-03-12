@@ -1,3 +1,14 @@
+# rules of variables 
+# Numeric Vairable not allowed
+# Apha Numeric number1
+# space not allowed student name
+# reserved keyword not allowed if, for , while ,pass , match 
+# uppercase
+# camelcase studentName 
+# kebab-case not allowed 
+# underscore allowed
+
+
 print("Bismillah ")
 
 
