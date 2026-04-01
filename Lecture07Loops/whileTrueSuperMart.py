@@ -1,14 +1,15 @@
-import streamlit as st
-
-
-
-numberOfItems=int(input("Enter Your Number Of Items\n"))
+counter=1
 finalBill=0
-for i in range(1,numberOfItems+1):
-    print("Item No",i)
-    itemsPrice=int(input("Enter Your Item Price \n"))
-    finalBill=finalBill+itemsPrice
+while True:
     
+    print("Item No ",counter)
+    price=int(input("Enter Your Item Price Here\n"))
+    finalBill=finalBill+price
+    counter=counter+1
+    if price == 00:
+        break
+    
+
 print("Your Total Bill is",finalBill )
 
 
