@@ -10,8 +10,6 @@ import pywhatkit as kit
 st.title("WhatsApp Automation")
 
 
-st.write("Contact choose karen")
-
 uploadkaro= st.file_uploader("Choose an excel file ",type=["xlsx"])
 
 
@@ -24,7 +22,7 @@ if uploadkaro is not None:
     st.dataframe(df)
     
     if st.button("Send Message "):
-        st.write("working ")
+        
         for i , row in df.iterrows():
             phoneNumber=f"+92{row["Phone"]}"
             message=f"{customMessage}\n{portfolioLink}"
